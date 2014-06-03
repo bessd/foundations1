@@ -1,0 +1,13 @@
+<script>
+  var guess, answer, difference;
+  answer = 7;
+  guess = prompt('What\'s my number?');
+  difference = guess - answer
+  if(guess == answer)	{
+  	console.log("yup");
+  	alert("You win! You're brilliant!");
+  }	else {
+  	console.log("nope")
+  	alert("Nooooope. You were off by: " + difference + ". Refresh to try again if you're really that bored.");
+  }
+</script>
