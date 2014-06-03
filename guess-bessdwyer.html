@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+  var guess, answer;
+  guess = prompt("I am the beginning of the end, and the end of time and space. I am essential to creation, and I surround every place. What am I?");
+  answer = "e";
+  if(guess == answer)	{
+  	console.log("yup");
+  	alert("You are so very clever! It's the letter e: I am the beginning of the End, and the end of timE and spacE. I am essential to crEation, and I surround Every placE.");
+  
+  } else if(guess == "42") {
+      console.log("awesome");
+      alert("Wrong answer, but you should get a medal anyway.");
+  
+  }	else if(!isNaN(guess)) {
+      console.log("false - number")
+      alert("Not even close. Hint: the answer is a letter of the alphabet we use in English.");
+  
+  } else {
+  	 console.log("false - letter")
+  	 alert("Nooooope! Not far off, but wrong. Guess again."); 
+
+  }
+</script>
+</head>
+<body>
+  <p>
+Refresh the page to guess again. 
+  </p>
+</body>
+</html>
