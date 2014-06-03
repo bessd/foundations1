@@ -5,18 +5,22 @@
   guess = prompt("I am the beginning of the end, and the end of time and space. I am essential to creation, and I surround every place. What am I?");
   answer = "e";
   if(guess == answer)	{
-  	console.log("yup");
+  	console.log("true");
   	alert("You are so very clever! It's the letter e: I am the beginning of the End, and the end of timE and spacE. I am essential to crEation, and I surround Every placE.");
   
   } else if(guess == "42") {
-      console.log("awesome");
+      console.log("false - awesome");
       alert("Wrong answer, but you should get a medal anyway.");
   
   } else if(guess == "god") {
       console.log("false - god")
       alert("Let's keep it light and funny, ok? And much more literal.");
   
-  }	else if(!isNaN(guess)) {
+  }	else if(guess == "air") {
+      console.log("false - air")
+      alert("You'd think so, but no. Try again. And read carefully.");
+
+  }  else if(!isNaN(guess)) {
       console.log("false - number")
       alert("Not even close. Hint: the answer is a letter of the alphabet we use in English.");
   
@@ -30,7 +34,7 @@
   
   // Observation: JavaScript is more interesting than I anticipated. I think it would be wise to go over some basic definitions and concepts a little more in class. Maybe you're trying not to bog us down with new vocabulary in addition to understanding the core concepts, but I know it would help me. 
   
-  // Sources and Collaborators: I got the idea to make it a word problem from my boyfriend (he's a software engineer). He also told me to check out isNan, so I went to the W3 Schools site. That site's also where I figured out how to write up "else if" statements and put them in the right place (it was counter-intuitive to me to put them before the "else" statement). Oh, that brings up other questions: best practices for the order of "else if" statements? And are they executed in any particular order when you have more than one? 
+  // Sources and Collaborators: I got the idea to make it a word problem from my boyfriend (he's a software engineer). He also told me to check out isNan (I told him I wanted to differentiate between numbers and letters), so I went to the W3 Schools site. That site's also where I figured out how to write up "else if" statements and put them in the right place (it was counter-intuitive at first to put them before the "else" statement). Oh, that brings up other questions: best practices for the order of "else if" statements? And are they executed in any particular order when you have more than one? 
 
 </script>
 <style>
