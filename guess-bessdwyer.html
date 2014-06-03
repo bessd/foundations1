@@ -12,6 +12,10 @@
       console.log("awesome");
       alert("Wrong answer, but you should get a medal anyway.");
   
+  } else if(guess == "god") {
+      console.log("false - god")
+      alert("Let's keep it light and funny, ok? And much more literal.");
+  
   }	else if(!isNaN(guess)) {
       console.log("false - number")
       alert("Not even close. Hint: the answer is a letter of the alphabet we use in English.");
@@ -21,6 +25,13 @@
   	 alert("Nooooope! Guess again. Hint: it's a letter."); 
 
   }
+  
+  // Question: If a user were to enter a single letter that is incorrect, what kind of code could I use to tell the user how far off in the alphabet they are? Example: user inputs the letter "b", and the desired output is something like "You're only 3 letters off!" ...  how would I do that? Seems like I'd need to somehow define a case where it's a single character input (no idea how to do that), make sure that single character is a letter (I can do that), and also maybe I'd need to assign values to the alphabet for the actual calculation (no clue). Thoughts/input/feedback on my line of thinking?
+  
+  // Observation: JavaScript is more interesting than I anticipated. I think it would be wise to go over some basic definitions and concepts a little more in class. Maybe you're trying not to bog us down with new vocabulary in addition to understanding the core concepts, but I know it would help me. 
+  
+  // Sources and Collaborators: I got the idea to make it a word problem from my boyfriend (he's a software engineer). He also told me to check out isNan, so I went to the W3 Schools site. That site's also where I figured out how to write up "else if" statements and put them in the right place (it was counter-intuitive to me to put them before the "else" statement). Oh, that brings up other questions: best practices for the order of "else if" statements? And are they executed in any particular order when you have more than one? 
+
 </script>
 <style>
 p {
