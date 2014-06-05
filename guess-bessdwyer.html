@@ -4,31 +4,26 @@
   var guess, answer;
   guess = prompt("I am the beginning of the end, and the end of time and space. I am essential to creation, and I surround every place. What am I?");
   answer = "e";
+
   if(guess == answer)	{
   	console.log("true");
-  	alert("You are so very clever! It's the letter e: I am the beginning of the End, and the end of timE and spacE. I am essential to crEation, and I surround Every placE.");
-  
-  } else if(guess == "42") {
-      console.log("false - awesome");
-      alert("Wrong answer, but you should get a medal anyway.");
-  
-  } else if(guess == "god") {
-      console.log("false - god")
-      alert("Let's keep it light and funny, ok? And much more literal.");
-  
-  }	else if(guess == "air") {
-      console.log("false - air")
-      alert("You'd think so, but no. Try again. And read carefully.");
-
-  }  else if(!isNaN(guess)) {
-      console.log("false - number")
-      alert("Not even close. Hint: the answer is a letter of the alphabet we use in English.");
-  
-  } else {
-  	 console.log("false - letter")
-  	 alert("Nooooope! Guess again. Hint: it's a letter."); 
-  
-  }
+  	alert("You are so very clever! It's the letter e: I am the beginning of the End, and the end of timE and spacE. I am essential to crEation, and I surround Every placE.");  
+ } else if(guess == "42") {
+    console.log("false - awesome");
+    alert("Wrong answer, but you should get a medal anyway.");
+ } else if(guess == "god") {
+    console.log("false - god")
+    alert("Let's keep it light and funny, ok? And much more literal.");
+ }	else if(guess == "air") {
+    console.log("false - air")
+    alert("You'd think so, but no. Try again. And read carefully.");
+ } else if(!isNaN(guess)) {
+    console.log("false - number")
+    alert("Not even close. Hint: the answer is a letter of the alphabet we use in English.");
+ } else {
+  	console.log("false - letter")
+  	alert("Nooooope! Guess again. Hint: it's a single letter.");
+ }
 
   // Question: If a user were to enter a single letter that is incorrect, what kind of code could I use to tell the user how far off 
   // in the alphabet they are? Example: user inputs the letter "b", and the desired output is something like "You're only 3 letters off!" 

@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+var random;
+var findDifference = function(answer, guess) {
+	if (answer > guess) {
+		return answer - guess;
+	}
+	else {
+		return guess - answer;
+	}
+}
+
+var guessingGame = function(answer) {
+	var guess, difference;
+	guess = prompt("What's my number?");
+	difference = findDifference(answer, guess);
+
+	if (guess == answer) {
+		return "You win!";
+	}
+	else {
+		return "Off by: " + difference;
+	}
+}
+
+random = Math.floor(Math.random() * 10);
+for (tries = 0; tries < 3; tries++) {
+	alert(guessingGame(random));
+}
+</script>
+</head>
+<body>
+</body>	
+</html>

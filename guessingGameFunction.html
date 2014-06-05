@@ -1,0 +1,20 @@
+<script>
+var guessingGame = function(answer) {
+	var guess, difference;
+	guess = prompt("What's my number?");
+	difference = = guess - answer;
+
+	if (guess == answer) {
+		return "You win!";
+	}
+	else {
+		return "Off by: " + difference;
+	}
+}
+	for (tries = 3; tries < 4; tries++) {
+		alert(guessingGame(4))
+}
+
+
+
+</script>
